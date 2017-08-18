@@ -41,35 +41,35 @@ Below are some screenshots that demo the functionality of the application:
     - The customer can then choose a product using its ID and then enter a quantity to buy.
       ![Customer Order](/images/1.png)
     - If the inventory has enough items, the order will be processed.
-      ![Order Valid](/example_images/2.png)
+      ![Order Valid](/images/2.png)
     - If the inventory is lacking, the order will not be processed.
-      ![Order Invalid](/example_images/3.png)
+      ![Order Invalid](/images/3.png)
 
 
 <a name="manager"></a>
 - Below is a demo of the `BamazonManager.js` file...
   - Running `node BamazonManager.js` will display a menu and perform the specific requests.
-    ![Manager Menu](/example_images/4.png)
+    ![Manager Menu](/images/4.png)
     - The manager can choose option `1` to view the current inventory.
-      ![Manager 1](/example_images/5.png)
+      ![Manager 1](/images/5.png)
     - The manager can choose option `2` to see low items in inventory (less than 5 in stock).
-      ![Manager 2](/example_images/6.png)
+      ![Manager 2](/images/6.png)
     - The manager can choose option `3` to re-stock existing items.
-      ![Manager 3](/example_images/7.png)
+      ![Manager 3](/images/7.png)
     - The manager can choose option `4` to add new items for sale.
-      ![Manager 4](/example_images/8.png)
+      ![Manager 4](/images/8.png)
       - Notice how the inventory was adjusted from steps `3` and `4`.
-        ![Manager 4b](/example_images/9.png)
+        ![Manager 4b](/images/9.png)
 
 
 <a name="supervisor"></a>
 - Below is a demo of the `Bamazon.js` file...
   - Running `node BamazonSupervisor.js` will display a menu and perform the specific requests.
-    ![Supervisor Menu](/example_images/10.png)
+    ![Supervisor Menu](/images/10.png)
     - The Supervisor can choose option `1` to view the sales by department.
-      ![Supervisor 1](/example_images/11.png)
+      ![Supervisor 1](/images/11.png)
     - The Supervisor can choose option `2` to add a new department.
-      ![Supervisor 2](/example_images/12.png)
+      ![Supervisor 2](/images/12.png)
       - Notice how the department list was adjusted from step `2`.
-        ![Supvervisor 2a](/example_images/13.png)
+        ![Supvervisor 2a](/images/13.png)
       - Also note that the manager can add a new item to the department and if a customer buys said item, it will cause total sales and profit to increase in that department.
