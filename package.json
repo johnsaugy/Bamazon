@@ -1,0 +1,23 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "A node application trying to simulate an Amazon.com experience",
+  "main": "BamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsaugy/Bamazon.git"
+  },
+  "author": "johnsaugy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnsaugy/Bamazon/issues"
+  },
+  "homepage": "https://github.com/johnsaugy/Bamazon#readme",
+  "dependencies": {
+    "mysql": "^2.11.1",
+    "prompt": "^1.0.0"
+  }
+}
