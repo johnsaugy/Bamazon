@@ -1,6 +1,6 @@
 # Bamazon
 
-An experimental CLI ecommerce application built with Node.js & MySQL. This application implements a simple command line based storefront using the npm [inquirer](https://www.npmjs.com/package/inquirer) package and the MySQL database backend together with the npm [mysql](https://www.npmjs.com/package/mysql) package. The application presents three interfaces: **customer**, **manager**, and **supervisor**
+An experimental CLI ecommerce application built with Node.js & MySQL. This application implements a simple command line based storefront using the npm [inquirer](https://www.npmjs.com/package/inquirer) package and the MySQL database backend together with the npm [mysql](https://www.npmjs.com/package/mysql) package. The application presents three interfaces: **customer**, **manager**, and **supervisor**.
 
 ## Prerequisites
 ### MySQL
