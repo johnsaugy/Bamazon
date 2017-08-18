@@ -1,1 +1,75 @@
 # Bamazon
+
+An experimental CLI ecommerce application built with Node.js & MySQL. This application implements a simple command line based storefront using the npm [inquirer](https://www.npmjs.com/package/inquirer) package and the MySQL database backend together with the npm [mysql](https://www.npmjs.com/package/mysql) package. The application presents three interfaces: **customer**, **manager**, and **supervisor**
+
+## Prerequisites
+### MySQL
+
+In order to run this application, you should have the MySQL database already set up on your machine. If you don't, visit the [MySQL installation page](https://dev.mysql.com/doc/refman/5.6/en/installing.html) to install the version you need for your operating system. Once you have MySQL isntalled, you will be able to create the *Bamazon* database and the *products* table with the SQL code found in [Bamazon.sql](Bamazon.sql). Run this code inside your MySQL client like [Sequel Pro](https://www.sequelpro.com/) to populate the database, then you will be ready to proceed with running the Bamazon customer and manager interfaces.
+
+### Node Package Manager (npm)
+If you clone this repo down to your machine, note that it has two npm dependencies!
+Before running the JavaScript files mentioned above, please run `npm install` in your terminal to download the [prompt](https://www.npmjs.com/package/prompt) and [mysql](https://www.npmjs.com/package/mysql) node packages.
+
+### Interfaces
+Three JavaScript files replicate the basic interfaces of the simple ecommerce engine:
+
+- `BamazonCustomer.js` _([See example here](#customer))_
+  - Receives orders from customers via the command line and interfaces with mySQL to deplete stock from the store's inventory.
+
+- `BamazonManager.js` _([See example here](#manager))_
+  - Mimics the basics of a warehouse management system, providing managers with a list of options to view stock and adjust inventory.
+  - A sample of the menu is below:
+    * View Products for Sale 
+    * View Low Inventory
+    * Add to Inventory
+    * Add New Product
+
+- `BamazonSupervisor.js` _([See example here](#supervisor))_
+  - Simulates very basic profit and sales insights for upper management.
+  - A sample of the menu is below:
+    * View Product Sales by Department 
+    * Create New Department
+
+### Bamazon Demo
+
+Below are some screenshots that demo the functionality of the application:
+
+<a name="customer"></a>
+- Below is a demo of the `BamazonCustomer.js` file...
+  - Running `node BamazonCustomer.js` will use MySQL to pull up all the products for sale.
+    - The customer can then choose a product using its ID and then enter a quantity to buy.
+      ![Customer Order](/images/1.png)
+    - If the inventory has enough items, the order will be processed.
+      ![Order Valid](/example_images/2.png)
+    - If the inventory is lacking, the order will not be processed.
+      ![Order Invalid](/example_images/3.png)
+
+
+<a name="manager"></a>
+- Below is a demo of the `BamazonManager.js` file...
+  - Running `node BamazonManager.js` will display a menu and perform the specific requests.
+    ![Manager Menu](/example_images/4.png)
+    - The manager can choose option `1` to view the current inventory.
+      ![Manager 1](/example_images/5.png)
+    - The manager can choose option `2` to see low items in inventory (less than 5 in stock).
+      ![Manager 2](/example_images/6.png)
+    - The manager can choose option `3` to re-stock existing items.
+      ![Manager 3](/example_images/7.png)
+    - The manager can choose option `4` to add new items for sale.
+      ![Manager 4](/example_images/8.png)
+      - Notice how the inventory was adjusted from steps `3` and `4`.
+        ![Manager 4b](/example_images/9.png)
+
+
+<a name="supervisor"></a>
+- Below is a demo of the `Bamazon.js` file...
+  - Running `node BamazonSupervisor.js` will display a menu and perform the specific requests.
+    ![Supervisor Menu](/example_images/10.png)
+    - The Supervisor can choose option `1` to view the sales by department.
+      ![Supervisor 1](/example_images/11.png)
+    - The Supervisor can choose option `2` to add a new department.
+      ![Supervisor 2](/example_images/12.png)
+      - Notice how the department list was adjusted from step `2`.
+        ![Supvervisor 2a](/example_images/13.png)
+      - Also note that the manager can add a new item to the department and if a customer buys said item, it will cause total sales and profit to increase in that department.
