@@ -5,7 +5,7 @@ An experimental CLI ecommerce application built with Node.js & MySQL. This appli
 ## Getting Started
 ### MySQL
 
-In order to run this application, you should have the MySQL database already set up. If you do not, visit the [MySQL installation page](https://dev.mysql.com/doc/refman/5.6/en/installing.html) to install the version you need for your operating system. Once you have MySQL installed, you will be able to create the *Bamazon* database and the *Products* and *Departments* table with the SQL code found in [Bamazon.sql](Bamazon.sql). Run this code inside your MySQL client, for example,[Sequel Pro](https://www.sequelpro.com/), to populate the database. Then, you will be ready to proceed with running the Bamazon customer manager, and supervisor interfaces!
+In order to run this application, you should have the MySQL database already set up. If you do not, visit the [MySQL installation page](https://dev.mysql.com/doc/refman/5.6/en/installing.html) to install the version you need for your operating system. Once you have MySQL installed, you will be able to create the *Bamazon* database and the *Products* and *Departments* table with the SQL code found in [Bamazon.sql](Bamazon.sql). Run this code inside your MySQL client, for example, [Sequel Pro](https://www.sequelpro.com/), to populate the database. Then, you will be ready to proceed with running the Bamazon customer manager, and supervisor interfaces!
 
 ### Node Package Manager (npm)
 Before running the JavaScript files mentioned above, please run `npm install` in your terminal to download the [prompt](https://www.npmjs.com/package/prompt) and [mysql](https://www.npmjs.com/package/mysql) node packages.
