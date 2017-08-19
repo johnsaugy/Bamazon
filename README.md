@@ -51,7 +51,7 @@ Below are some screenshots that demo the functionality of the application:
     ![Manager Menu](/images/4.png)
     - The manager can choose option `1` to view the current inventory.
       ![Manager 1](/images/5.png)
-    - The manager can choose option `2` to see low items in inventory (less than 5 in stock).
+    - The manager can choose option `2` to see low items in inventory (less than 10 in stock).
       ![Manager 2](/images/6.png)
     - The manager can choose option `3` to re-stock existing items.
       ![Manager 3](/images/7.png)
